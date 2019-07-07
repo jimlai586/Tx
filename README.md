@@ -1,4 +1,38 @@
-# Tx
+# A quick update after Combine
+
+People think I'm insane saying RxSwift is actually RxObjC and you could lose more than you gain with it
+
+Now that Apple releases combine framework, let's recap my observations and how it turns out
+
+## Observable type is useless for static dispatch.
+
+I ain't got time for type cast everything. Swift runs on static dispatch, i.e; know the type in compile time so 
+
+it can help you. Look at Combine, type is specifed at compile time.
+
+## Dispose bag my ass 
+
+Who though it would be fun to release memory MANUALLY in ARC? Look at Combine, it eliminates that.
+
+## Work with property observer
+
+It's RxObjC when you use KVO blackbox all of the time.
+
+## Official SDK
+
+I could build all kinds of nonsense too if I can replace Apple SDK with my own and ask people to base their career with it.
+
+It's funny there are actual job requirements that build upon non-Apple SDK like RxSwift.
+
+You'd have serious maintainence headaches.
+
+## With Combine, NOW you do SOME reactive programming.
+
+Not all of it, use sparringly. There are other design patterns like Redux. They are strong together.
+
+# Legacy RxSwift review below for record.
+
+## Tx
 A RxSwift  alternative
 
 Triggered by the following quote from 
